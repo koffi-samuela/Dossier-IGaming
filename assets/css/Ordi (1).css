@@ -1,0 +1,507 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    padding-bottom: 39%;
+    background-image: url(/imgs/header/header.jpg) ;
+    background-size: cover;
+    background-position-y: 50%;
+    background-repeat:no-repeat;
+    left: 40%;
+    display: flex;
+}
+header .titre1{
+    width: 10%;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    z-index: 1000;
+}
+header .nav{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 40%;
+    left: 24%;
+    z-index: 1000;
+}
+header .tendance:hover{
+    color: orange;
+    text-decoration: underline;
+}
+header .précommande:hover{
+    color: orange;
+    text-decoration: underline;
+}
+header .sorties:hover{
+    color: orange;
+    text-decoration: underline;
+}
+header .support:hover{
+    color: orange;
+    text-decoration: underline;
+}
+header .pictos img{
+    display: flex;
+    width: 52%;
+}
+header .pictos{
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    width: 5%;
+    left: 80%;
+    border: solid transparent;
+} 
+header a{
+    display: flex;
+    color: white;
+    font-size: 80%;
+    text-decoration: none;
+    justify-content: space-between;
+    border: solid transparent;
+}
+header nav.navbar1{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    position: absolute;
+    width: 115%;
+    height: 3%;
+    top: 2%;
+    z-index: 1000;
+    
+}
+header nav.navbar2 {
+    color: white;
+    display: flex;
+    flex-flow: nowrap;
+    border: solid transparent;
+    justify-content: space-between;
+    position: absolute;
+    width: 40%;
+    height: 7%;
+    left: 32%;
+    top: 7%;
+    background: rgba(39, 39, 39, 0.6);
+    backdrop-filter: blur(12px);
+    border-radius: 63px;
+    z-index: 1000;
+}
+header nav.navbar2 .consoles{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+header nav.navbar2 .consoles > *{
+    display: flex;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 2%;
+}
+header nav.navbar2 .consoles .swich p{
+    padding: 1%;
+}
+header nav.navbar2 .consoles p{
+    padding: 4%;
+    font-size: 100%;
+}
+header nav.navbar2 .consoles .picto{
+    width: 30%;
+}
+header nav.navbar2 .consoles .arrow{
+    width: 13%;
+}
+header nav.navbar2 .consoles .PC:hover{
+    opacity: 50%;
+}
+header nav.navbar2 .consoles .PS:hover{
+    opacity: 50%;
+}
+header nav.navbar2 .consoles .Xbox:hover{
+    opacity: 50%;
+}
+header nav.navbar2 .consoles .Swich:hover{
+    opacity: 50%;
+}
+header nav.navbar2 .consoles .Swich .space{
+    padding-right: 3%;
+}
+header nav.navbar2 .consoles .fond{
+    display: flex;
+    position: absolute;
+    border: solid orangered;
+    background-color: orangered;
+    border-radius: 63px;
+    justify-content: center;
+    align-items: flex-start;
+    left: 85%;
+    height: 80%;
+}
+header nav.navbar2 .consoles .fond .recherche{
+
+    position: absolute;
+    color: white;
+    top: 15%;
+    right: 20%;
+    margin-left: 20%;
+    box-sizing: 100%;
+    z-index: 10;
+    border: solid transparent;
+}
+header nav.navbar2 .consoles .fond .recherche img{
+    width: 70%;
+
+}
+header nav.navbar2 .consoles .fond .recherche:hover{
+    opacity: 50%;
+}
+header div.prix{
+    width: 100%;
+    position: absolute;
+    color: white;
+    box-sizing: 100%;
+    z-index: 10;
+    border: solid transparent;
+}
+header div.prix img{
+    margin-left: 10%;
+    margin-top: 15%;
+    width: 10%;
+    height: 10%;
+    transform: rotate(-70deg);
+}
+
+
+
+
+
+body div.tendance{
+    padding-bottom: 60%;
+    background-color: black;
+}
+body .tendance .title{
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 40%;
+    height: 3%;
+    left: 15%;
+    border-bottom: solid white;
+    justify-content: center;
+}
+body .tendance .title h2{
+    display: flex;
+    text-transform: capitalize;
+    color: white;
+    padding-left: 3%;
+    top: 1%;
+    width: 40%;
+    position: absolute;
+}
+body .tendance .gallery{
+    padding-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+body .tendance .gallery img{
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+
+
+    body .carrousel{
+        display: none;
+    }
+    body .carrousel img{
+    max-width:100%
+    }
+    
+    
+    body .carrousel .slideshow{
+    border: 5px solid black;
+    box-shadow: 0 0 5px hsla(0,0%,0%,.5);
+    overflow: hidden;
+    max-width: 600px;
+    margin: 2rem auto;
+    position: relative
+    }
+        
+    body .carrousel .slideshow ul{
+    padding-bottom: 66.67%;/* ratio pour le responsive */
+    margin: 0;
+    list-style-type: none;
+    position: relative
+    }
+        
+        
+    body .carrousel .slideshow li{
+    top: 0;
+    left: 0;
+    animation: slideshow 35s ease infinite;
+    position: absolute;
+    opacity: 0;
+    }
+    
+    body .carrousel .slideshow li:nth-child(){
+        animation-delay: 0s;
+    }
+     
+    
+    body .carrousel .slideshow li:nth-child(2){
+    animation-delay: 5s
+    }
+    
+    body .carrousel .slideshow li:nth-child(3){
+    animation-delay: 10s
+    }
+    
+    body .carrousel .slideshow li:nth-child(4){
+    animation-delay: 15s
+    }
+    
+    body .carrousel .slideshow li:nth-child(5){
+    animation-delay: 20s
+    }
+    
+    body .carrousel .slideshow li:nth-child(6){
+    animation-delay: 25s
+    }
+        
+    body .carrousel .slideshow li:nth-child(7){
+    animation-delay: 30s
+    }
+    
+        
+    @keyframes slideshow{
+    0%{opacity: 0}
+    10%{opacity: 1}
+    20%{opacity: 1}
+    25%{opacity: 0}
+    100%{opacity: 0}
+    } 
+    
+        
+    body .carrousel .slideshow span{
+    background: rgba(0,0,0,0.7);
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0
+    }
+        
+    /*****barre progression *****/
+    body .carrousel .barre_progression{ 
+        
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    height: 5px;
+    background: white;
+    animation: barre_progression 25s ease-out infinite;
+        
+    }
+        
+    /*****animation barre progression *****/    
+    @keyframes barre_progression{
+    0%,20%,40%,60%,80%,100%{width: 0%;opacity: 0}
+    4%,24%,44%,64%,84%{width: 0%;opacity: .3}
+    16%,36%,56%,76%,96%{width: 100%;opacity: .7}
+    17%,37%,57%,77%,97%{width: 100%;opacity: .3}
+    18%,38%,58%,78%,98%{width: 100%;opacity: 0}
+    }
+    
+    
+
+
+
+body div.tendance{
+    padding-bottom: 60%;
+    background-color: black;
+}
+body .precommande .bloc{
+display: flex;
+flex-wrap: wrap;
+color: aliceblue;
+justify-content: center;
+}
+
+body .precommande .bloc img{
+    border-radius: 20px;
+}
+
+body .precommande .bloc div{
+    margin: 20px;
+    margin-bottom: 0%;
+}
+
+body .precommande .bloc ul{
+/* margin-left:-40px;  */
+color: blue;
+/* border: 1px;
+border-style: solid;
+border-width: 1px */
+}
+body .precommande .bloc h3{
+    /* justify-items: center; */
+    font-weight: bold;
+    font-size:xx-large;
+    margin-left: 100px;
+
+}
+#précommandes-2 .bloc div{
+    margin: 25px;
+    margin-top: 20px;
+    margin-bottom: 0%;}
+img:hover{
+    transform: scale(1.1);
+    
+}
+ul span{
+    padding: 5px;
+    border-width: 0.5px;
+    border-color: blue;
+    border-style: solid;
+    border-radius: 5px;
+}
+#barre_noire{
+    color: white;
+}
+.ensemble1, .ensemble2, .ensemble3,.ensemble4{
+    display: flex;
+    padding: 10px;
+}  
+.ensemble{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: solid #FF5400;
+    border-bottom: solid #FF5400;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+#avis{
+    color: white;
+}
+.case1{
+ display: flex;
+ flex-wrap: wrap;
+}
+.img{
+    margin: 10px;
+}
+
+.case1 .texte{
+    margin: 20px;
+    margin-left: 10%;
+    margin-bottom: 0%;
+}
+.case1 .texte h4 {
+    margin-top: -5px;
+}
+
+
+
+
+body div.transi1{
+    padding-bottom: 10%;
+    background-color: black;
+}
+
+
+body div.précommandes{
+    padding-bottom: 50%;
+    background-color: blue;
+}
+
+
+body div.avis{
+    padding-bottom: 40%;
+    background-color: violet;
+}
+
+
+body div.inscription{
+    padding-bottom: 10%;
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 667px) {
+    header{
+        padding-bottom: 70% ;
+        background-size: 200%;
+        background-position-x: 90%;
+        background-position-y: 50%;
+    }
+    header .test{
+        margin-top: -14px;
+        background-color: white;
+        opacity: 0.3;
+        width: 100%;
+        z-index: 100;
+    }
+    header nav.navbar1 .title1{
+        top: 5%;
+    }
+    header nav.navbar1 .nav{
+        display: none;
+    }
+    header nav.navbar1 .pictos{
+        width: 10%;
+        left: 70%;
+        bottom: 5%;
+        color: #FF5400;
+    }
+    header nav.navbar2{
+        display: flex;
+        width: 70%;
+        left: 20%;
+    }
+    header div.prix{
+        top: 10%;
+        width: 100%;
+        position: absolute;
+        color: white;
+        box-sizing: 100%;
+        z-index: 10;
+        border: solid transparent;
+    }
+    header div.prix img{
+        margin-left: 50%;
+        bottom: -10%;
+        width: 30%;
+        height: 30%;
+    }
+
+    body .tendance .title{
+        height: 9%;
+    }
+    body .tendance .title h2{
+        margin-top: 11%;
+    }
+    body .tendance div.gallery{
+        display: none;
+    }
+    body .carrousel{
+       display: block;
+       padding-top: 10%;
+    }
+}
