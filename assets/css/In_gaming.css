@@ -11,7 +11,7 @@ body{
 }
 header{
     padding-bottom: 39%;
-    background-image: url(/assets/ressources/Header/Group\ 52.png) ;
+    background-image: url(../ressources/Header/Group\ 52.png) ;
     background-attachment: fixed;
     background-size: cover;
     background-position-y: 50%;
